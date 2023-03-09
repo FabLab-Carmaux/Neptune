@@ -1,0 +1,4 @@
+1;12345678;3;40;Arthur;Rey;False
+2;12345678;2;53;Lolita;CABOS;False
+3;12345678;3;27;Anis;Julien;False
+4;;1;70;Brice;Rey;False

@@ -1,0 +1,5 @@
+adherentFilePath=C:\Users\ptitg\OneDrive\Bureau\Neptune\1.4\Fichiers dataBase\adherentDataBase.txt
+productFilePath=C:\Users\ptitg\OneDrive\Bureau\Neptune\1.4\Fichiers dataBase\product.txt
+dernièreActionFilePath=C:\Users\ptitg\OneDrive\Bureau\Neptune\1.4\Fichiers dataBase\dernièreAction.txt
+nightMode=false
+debugMode=0

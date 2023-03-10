@@ -52,7 +52,7 @@ namespace Scannette
             // 
             this.textBoxID.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxID.Location = new System.Drawing.Point(293, 242);
+            this.textBoxID.Location = new System.Drawing.Point(231, 215);
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.Size = new System.Drawing.Size(184, 26);
             this.textBoxID.TabIndex = 1;
@@ -64,7 +64,7 @@ namespace Scannette
             this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(304, 181);
+            this.label1.Location = new System.Drawing.Point(242, 154);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 25);
             this.label1.TabIndex = 3;
@@ -75,7 +75,7 @@ namespace Scannette
             this.button1.BackColor = System.Drawing.SystemColors.Info;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(52, 291);
+            this.button1.Location = new System.Drawing.Point(259, 430);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 31);
             this.button1.TabIndex = 3;
@@ -94,7 +94,7 @@ namespace Scannette
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Coral;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ImageKey = "(aucun)";
-            this.button2.Location = new System.Drawing.Point(191, 406);
+            this.button2.Location = new System.Drawing.Point(129, 379);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(370, 31);
             this.button2.TabIndex = 2;
@@ -107,7 +107,7 @@ namespace Scannette
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(328, 157);
+            this.label6.Location = new System.Drawing.Point(266, 130);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(112, 24);
             this.label6.TabIndex = 13;
@@ -118,9 +118,9 @@ namespace Scannette
             this.pictureBox3.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox3.ErrorImage = null;
             this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(35, 277);
+            this.pictureBox3.Location = new System.Drawing.Point(242, 416);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(218, 59);
+            this.pictureBox3.Size = new System.Drawing.Size(145, 59);
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
             // 
@@ -130,7 +130,7 @@ namespace Scannette
             this.labelNom.AutoSize = true;
             this.labelNom.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNom.Location = new System.Drawing.Point(279, 114);
+            this.labelNom.Location = new System.Drawing.Point(279, 94);
             this.labelNom.Name = "labelNom";
             this.labelNom.Size = new System.Drawing.Size(0, 24);
             this.labelNom.TabIndex = 16;
@@ -144,7 +144,7 @@ namespace Scannette
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = global::Scannette.Properties.Resources.LOGO_FAB_LAB_16_page_002;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(318, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(256, 36);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(131, 75);
             this.pictureBox1.TabIndex = 11;
@@ -155,7 +155,7 @@ namespace Scannette
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox2.ErrorImage = global::Scannette.Properties.Resources.LOGO_FAB_LAB_15_page_0022;
             this.pictureBox2.InitialImage = global::Scannette.Properties.Resources.LOGO_FAB_LAB_15_page_0021;
-            this.pictureBox2.Location = new System.Drawing.Point(177, 39);
+            this.pictureBox2.Location = new System.Drawing.Point(115, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(397, 409);
             this.pictureBox2.TabIndex = 12;
@@ -167,7 +167,7 @@ namespace Scannette
             this.label4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(216, 248);
+            this.label4.Location = new System.Drawing.Point(154, 221);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 15);
             this.label4.TabIndex = 20;
@@ -179,7 +179,7 @@ namespace Scannette
             this.label5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(194, 283);
+            this.label5.Location = new System.Drawing.Point(132, 256);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 15);
             this.label5.TabIndex = 22;
@@ -190,7 +190,7 @@ namespace Scannette
             // 
             this.textBoxPassword.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(293, 277);
+            this.textBoxPassword.Location = new System.Drawing.Point(231, 250);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(184, 26);
@@ -201,7 +201,7 @@ namespace Scannette
             // 
             this.checkBoxPasswordChar.AutoSize = true;
             this.checkBoxPasswordChar.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxPasswordChar.Location = new System.Drawing.Point(318, 319);
+            this.checkBoxPasswordChar.Location = new System.Drawing.Point(256, 292);
             this.checkBoxPasswordChar.Name = "checkBoxPasswordChar";
             this.checkBoxPasswordChar.Size = new System.Drawing.Size(139, 17);
             this.checkBoxPasswordChar.TabIndex = 35;

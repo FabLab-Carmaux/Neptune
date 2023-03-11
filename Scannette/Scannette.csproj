@@ -65,6 +65,8 @@
     <Compile Include="Action.cs" />
     <Compile Include="Adherent.cs" />
     <Compile Include="AdherentDatabase.cs" />
+    <Compile Include="Commentaire.cs" />
+    <Compile Include="CommentairesDataBase.cs" />
     <Compile Include="configurationFile.cs" />
     <Compile Include="Crée un adherent.cs">
       <SubType>Form</SubType>

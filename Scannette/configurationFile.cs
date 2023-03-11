@@ -15,6 +15,7 @@ namespace Scannette
         public bool nightMode;
         public int debugMode;
         public string dernièreActionFilePath;
+        public string commentaireFilePath;
 
         public configurationFile()
         {
@@ -46,6 +47,10 @@ namespace Scannette
                 if (values[0] == "dernièreActionFilePath")
                 {
                     dernièreActionFilePath = values[1];
+                }
+                if (values[0] == "commentaireilePath")
+                {
+                    commentaireFilePath = values[1];
                 }
             }
 

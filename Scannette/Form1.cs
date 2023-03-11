@@ -90,7 +90,7 @@ namespace Scannette
                 {
                     if (adherent.getCredential() == textBoxPassword.Text)
                     {
-                        Form2 form2 = new Form2(adherent, adherentDatabase, productDatabase, actionFile, configurationFile);
+                        Form2 form2 = new Form2(this,adherent, adherentDatabase, productDatabase, actionFile, configurationFile);
                         form2.Show();
                         Console.WriteLine("Adherent connu");
 
@@ -100,6 +100,8 @@ namespace Scannette
 
                         textBoxID.Text = "";
                         textBoxPassword.Text = "";
+
+                        this.Hide();
                     } else
                     {
                         MessageBox.Show("Mot de passe invalide","ERREUR",MessageBoxButtons.OK,MessageBoxIcon.Error);
@@ -108,7 +110,7 @@ namespace Scannette
 
                 } else
                 {
-                    Form2 form2 = new Form2(adherent, adherentDatabase, productDatabase, actionFile, configurationFile);
+                    Form2 form2 = new Form2(this,adherent, adherentDatabase, productDatabase, actionFile, configurationFile);
                     form2.Show();
                     Console.WriteLine("Adherent connu");
 
@@ -118,6 +120,7 @@ namespace Scannette
 
                     textBoxID.Text = "";
                     textBoxPassword.Text = "";
+                    this.Hide();
                 }
 
             }
@@ -133,11 +136,6 @@ namespace Scannette
             {
                 Environment.Exit(0);
             }
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void textBoxID_TextChanged(object sender, EventArgs e)

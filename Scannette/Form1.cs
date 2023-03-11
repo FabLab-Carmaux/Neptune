@@ -19,14 +19,15 @@ namespace Scannette
         AdherentDatabase adherentDatabase;
         ProductDatabase productDatabase;
         dernièreActionFile actionFile;
+        CommentairesDataBase commentairesDataBase;
 
         //, dernièreActionFile myDernièreActionFile, ProductDatabase myProductDataBase
 
-        public Form1(configurationFile myConfigurationFile, AdherentDatabase myAdherentDatabase, dernièreActionFile myDernièreActionFile, ProductDatabase myProductDataBase)
+        public Form1(configurationFile myConfigurationFile, AdherentDatabase myAdherentDatabase, dernièreActionFile myDernièreActionFile, ProductDatabase myProductDataBase, CommentairesDataBase myCommentairesDataBase)
         {
             configurationFile = myConfigurationFile;
             adherentDatabase = myAdherentDatabase;
-            
+            commentairesDataBase = myCommentairesDataBase;
 
 
             actionFile = myDernièreActionFile;
@@ -90,7 +91,7 @@ namespace Scannette
                 {
                     if (adherent.getCredential() == textBoxPassword.Text)
                     {
-                        Form2 form2 = new Form2(this,adherent, adherentDatabase, productDatabase, actionFile, configurationFile);
+                        Form2 form2 = new Form2(this, adherent, adherentDatabase, productDatabase, actionFile, configurationFile, commentairesDataBase) ;
                         form2.Show();
                         Console.WriteLine("Adherent connu");
 
@@ -110,7 +111,7 @@ namespace Scannette
 
                 } else
                 {
-                    Form2 form2 = new Form2(this,adherent, adherentDatabase, productDatabase, actionFile, configurationFile);
+                    Form2 form2 = new Form2(this,adherent, adherentDatabase, productDatabase, actionFile, configurationFile, commentairesDataBase);
                     form2.Show();
                     Console.WriteLine("Adherent connu");
 

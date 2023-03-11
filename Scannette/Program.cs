@@ -18,6 +18,7 @@ namespace Scannette
             AdherentDatabase myAdherentDatabase = null;
             dernièreActionFile myDernièreActionFile = null;
             ProductDatabase myProductDatabase = null;
+            CommentairesDataBase myCommentairesDataBase = null;
             try
             {
                 myConfigurationFile = new configurationFile();
@@ -26,7 +27,7 @@ namespace Scannette
             {
  
 
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "ERROR configurationFile", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 if (Application.MessageLoop == true)
                 {
                     Application.Exit();
@@ -37,7 +38,6 @@ namespace Scannette
                 }
             }
 
-
             try
             {
                  myAdherentDatabase = new AdherentDatabase(myConfigurationFile);
@@ -45,7 +45,7 @@ namespace Scannette
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "ERROR AdherentDatabase", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 if (Application.MessageLoop == true)
                 {
                     Application.Exit();
@@ -63,7 +63,7 @@ namespace Scannette
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "ERROR dernièreActionFile", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 if (Application.MessageLoop == true)
                 {
                     Application.Exit();
@@ -81,7 +81,7 @@ namespace Scannette
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "ERROR ProductDatabase", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 if (Application.MessageLoop == true)
                 {
                     Application.Exit();
@@ -92,10 +92,27 @@ namespace Scannette
                 }
             }
 
+            try
+            {
+                myCommentairesDataBase = new CommentairesDataBase(myConfigurationFile);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "ERROR CommentairesDataBase", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (Application.MessageLoop == true)
+                {
+                    Application.Exit();
+                }
+                else
+                {
+                    Environment.Exit(1);
+                }
+            }
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1(myConfigurationFile, myAdherentDatabase, myDernièreActionFile, myProductDatabase));
+            Application.Run(new Form1(myConfigurationFile, myAdherentDatabase, myDernièreActionFile, myProductDatabase, myCommentairesDataBase));
         }
     }
 }

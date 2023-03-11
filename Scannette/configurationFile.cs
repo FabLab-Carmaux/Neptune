@@ -48,7 +48,7 @@ namespace Scannette
                 {
                     dernièreActionFilePath = values[1];
                 }
-                if (values[0] == "commentaireilePath")
+                if (values[0] == "commentaireFilePath")
                 {
                     commentaireFilePath = values[1];
                 }

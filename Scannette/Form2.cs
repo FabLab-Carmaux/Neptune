@@ -19,8 +19,9 @@ namespace Scannette
         ProductDatabase myProductDataBase2;
         dernièreActionFile myDernièreActionFile2;
         configurationFile configurationFile;
+        CommentairesDataBase commentairesDataBase;
         Form1 myForm1;
-        public Form2(Form1 form1,Adherent adherent, AdherentDatabase adherentDatabase, ProductDatabase myProductDataBase, dernièreActionFile myDernièreActionFile, configurationFile myConfigurationFile)
+        public Form2(Form1 form1,Adherent adherent, AdherentDatabase adherentDatabase, ProductDatabase myProductDataBase, dernièreActionFile myDernièreActionFile, configurationFile myConfigurationFile, CommentairesDataBase myCommentairesDataBase)
         {
             myForm1 = form1;
             myAdherent = adherent;
@@ -28,6 +29,7 @@ namespace Scannette
             myProductDataBase2 = myProductDataBase;
             myDernièreActionFile2 = myDernièreActionFile;
             configurationFile = myConfigurationFile;
+            commentairesDataBase = myCommentairesDataBase;
 
             InitializeComponent();
 
@@ -40,16 +42,19 @@ namespace Scannette
             {
                 label6.Text = "Membre";
                 tabControlMembre.Visible = true;
+                tabControlAdmin.Visible = false;
             }
             else if (adherent.getGrade() == 2)
             {
                 label6.Text = "Gerant";
                 tabControlMembre.Visible = false;
+                tabControlAdmin.Visible = false;
             }
             else if (adherent.getGrade() == 3)
             {
                 label6.Text = "Admin";
                 tabControlMembre.Visible = false;
+                tabControlAdmin.Visible = true;
             }
         }
 
@@ -64,6 +69,12 @@ namespace Scannette
             myForm1.Show();
 
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormEnvoyerUnCommentaire formEnvoyerUnCommentaire = new FormEnvoyerUnCommentaire(commentairesDataBase, myAdherent);
+            formEnvoyerUnCommentaire.Show();
         }
     }
 }

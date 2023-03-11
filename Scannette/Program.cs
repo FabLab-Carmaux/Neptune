@@ -18,7 +18,8 @@ namespace Scannette
             AdherentDatabase myAdherentDatabase = null;
             dernièreActionFile myDernièreActionFile = null;
             ProductDatabase myProductDatabase = null;
-            CommentairesDataBase myCommentairesDataBase = null;
+            historiqueDataBase myHistoriqueDataBase = null;
+
             try
             {
                 myConfigurationFile = new configurationFile();
@@ -94,12 +95,12 @@ namespace Scannette
 
             try
             {
-                myCommentairesDataBase = new CommentairesDataBase(myConfigurationFile);
+                myHistoriqueDataBase = new historiqueDataBase(myConfigurationFile);
             }
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message, "ERROR CommentairesDataBase", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "ERROR HistoriqueDataBase", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 if (Application.MessageLoop == true)
                 {
                     Application.Exit();
@@ -112,7 +113,7 @@ namespace Scannette
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1(myConfigurationFile, myAdherentDatabase, myDernièreActionFile, myProductDatabase, myCommentairesDataBase));
+            Application.Run(new Form1(myConfigurationFile, myAdherentDatabase, myDernièreActionFile, myProductDatabase, myHistoriqueDataBase));
         }
     }
 }

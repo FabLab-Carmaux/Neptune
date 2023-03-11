@@ -12,16 +12,16 @@ namespace Scannette
 {
     public partial class Form2 : Form
     {
-        private bool passwordChar = true;
 
         Adherent myAdherent;
         AdherentDatabase myAdherentDatabase;
         ProductDatabase myProductDataBase2;
         dernièreActionFile myDernièreActionFile2;
         configurationFile configurationFile;
-        CommentairesDataBase commentairesDataBase;
         Form1 myForm1;
-        public Form2(Form1 form1,Adherent adherent, AdherentDatabase adherentDatabase, ProductDatabase myProductDataBase, dernièreActionFile myDernièreActionFile, configurationFile myConfigurationFile, CommentairesDataBase myCommentairesDataBase)
+        historiqueDataBase historiqueDataBase;
+
+        public Form2(Form1 form1,Adherent adherent, AdherentDatabase adherentDatabase, ProductDatabase myProductDataBase, dernièreActionFile myDernièreActionFile, configurationFile myConfigurationFile, historiqueDataBase myHistoriqueDataBase)
         {
             myForm1 = form1;
             myAdherent = adherent;
@@ -29,8 +29,7 @@ namespace Scannette
             myProductDataBase2 = myProductDataBase;
             myDernièreActionFile2 = myDernièreActionFile;
             configurationFile = myConfigurationFile;
-            commentairesDataBase = myCommentairesDataBase;
-
+            historiqueDataBase = myHistoriqueDataBase;
             InitializeComponent();
 
             label11.Text = adherent.getCodeBar();
@@ -56,6 +55,9 @@ namespace Scannette
                 tabControlMembre.Visible = false;
                 tabControlAdmin.Visible = true;
             }
+
+            dataGridView1.DataSource = historiqueDataBase.GetList();
+            dataGridView1.Refresh();
         }
 
         private void tabPageAddMember_Click(object sender, EventArgs e)
@@ -71,10 +73,11 @@ namespace Scannette
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            FormEnvoyerUnCommentaire formEnvoyerUnCommentaire = new FormEnvoyerUnCommentaire(commentairesDataBase, myAdherent);
-            formEnvoyerUnCommentaire.Show();
+            myForm1.Show();
+
+            this.Close();
         }
     }
 }

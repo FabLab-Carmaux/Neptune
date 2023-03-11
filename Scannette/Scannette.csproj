@@ -65,8 +65,6 @@
     <Compile Include="Action.cs" />
     <Compile Include="Adherent.cs" />
     <Compile Include="AdherentDatabase.cs" />
-    <Compile Include="Commentaire.cs" />
-    <Compile Include="CommentairesDataBase.cs" />
     <Compile Include="configurationFile.cs" />
     <Compile Include="Crée un adherent.cs">
       <SubType>Form</SubType>
@@ -87,12 +85,8 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormEnvoyerUnCommentaire.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormEnvoyerUnCommentaire.Designer.cs">
-      <DependentUpon>FormEnvoyerUnCommentaire.cs</DependentUpon>
-    </Compile>
+    <Compile Include="historique.cs" />
+    <Compile Include="historiqueDataBase.cs" />
     <Compile Include="ProductDatabase.cs" />
     <Compile Include="Produit.cs" />
     <Compile Include="Program.cs" />
@@ -105,9 +99,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormEnvoyerUnCommentaire.resx">
-      <DependentUpon>FormEnvoyerUnCommentaire.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

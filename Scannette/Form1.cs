@@ -19,16 +19,15 @@ namespace Scannette
         AdherentDatabase adherentDatabase;
         ProductDatabase productDatabase;
         dernièreActionFile actionFile;
-        CommentairesDataBase commentairesDataBase;
+        historiqueDataBase historiqueDataBase;
 
         //, dernièreActionFile myDernièreActionFile, ProductDatabase myProductDataBase
 
-        public Form1(configurationFile myConfigurationFile, AdherentDatabase myAdherentDatabase, dernièreActionFile myDernièreActionFile, ProductDatabase myProductDataBase, CommentairesDataBase myCommentairesDataBase)
+        public Form1(configurationFile myConfigurationFile, AdherentDatabase myAdherentDatabase, dernièreActionFile myDernièreActionFile, ProductDatabase myProductDataBase, historiqueDataBase myHistoriqueDataBase)
         {
             configurationFile = myConfigurationFile;
             adherentDatabase = myAdherentDatabase;
-            commentairesDataBase = myCommentairesDataBase;
-
+            historiqueDataBase = myHistoriqueDataBase;
 
             actionFile = myDernièreActionFile;
             productDatabase = myProductDataBase;
@@ -91,7 +90,7 @@ namespace Scannette
                 {
                     if (adherent.getCredential() == textBoxPassword.Text)
                     {
-                        Form2 form2 = new Form2(this, adherent, adherentDatabase, productDatabase, actionFile, configurationFile, commentairesDataBase) ;
+                        Form2 form2 = new Form2(this, adherent, adherentDatabase, productDatabase, actionFile, configurationFile, historiqueDataBase) ;
                         form2.Show();
                         Console.WriteLine("Adherent connu");
 
@@ -111,7 +110,7 @@ namespace Scannette
 
                 } else
                 {
-                    Form2 form2 = new Form2(this,adherent, adherentDatabase, productDatabase, actionFile, configurationFile, commentairesDataBase);
+                    Form2 form2 = new Form2(this,adherent, adherentDatabase, productDatabase, actionFile, configurationFile, historiqueDataBase);
                     form2.Show();
                     Console.WriteLine("Adherent connu");
 
@@ -169,6 +168,11 @@ namespace Scannette
                 passwordChar = true;
                 textBoxPassword.PasswordChar = '*';
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://fablab-carmaux.fr/");
         }
     }
 }

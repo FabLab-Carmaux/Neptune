@@ -43,6 +43,7 @@ namespace Scannette
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.checkBoxPasswordChar = new System.Windows.Forms.CheckBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -78,7 +79,7 @@ namespace Scannette
             this.button1.Location = new System.Drawing.Point(259, 430);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 31);
-            this.button1.TabIndex = 3;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Quitter";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -97,7 +98,7 @@ namespace Scannette
             this.button2.Location = new System.Drawing.Point(129, 379);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(370, 31);
-            this.button2.TabIndex = 2;
+            this.button2.TabIndex = 4;
             this.button2.Text = "Se connecter";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -194,7 +195,7 @@ namespace Scannette
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(184, 26);
-            this.textBoxPassword.TabIndex = 21;
+            this.textBoxPassword.TabIndex = 2;
             this.textBoxPassword.Visible = false;
             // 
             // checkBoxPasswordChar
@@ -204,11 +205,27 @@ namespace Scannette
             this.checkBoxPasswordChar.Location = new System.Drawing.Point(256, 292);
             this.checkBoxPasswordChar.Name = "checkBoxPasswordChar";
             this.checkBoxPasswordChar.Size = new System.Drawing.Size(139, 17);
-            this.checkBoxPasswordChar.TabIndex = 35;
+            this.checkBoxPasswordChar.TabIndex = 3;
             this.checkBoxPasswordChar.Text = "Afficher le mot de passe";
             this.checkBoxPasswordChar.UseVisualStyleBackColor = false;
             this.checkBoxPasswordChar.Visible = false;
             this.checkBoxPasswordChar.CheckedChanged += new System.EventHandler(this.checkBoxPasswordChar_CheckedChanged);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.DarkBlue;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Blue;
+            this.linkLabel1.Location = new System.Drawing.Point(12, 467);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(141, 16);
+            this.linkLabel1.TabIndex = 5;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Site internet du Fablab";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Blue;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Form1
             // 
@@ -216,6 +233,7 @@ namespace Scannette
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(626, 492);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.checkBoxPasswordChar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxPassword);
@@ -229,6 +247,7 @@ namespace Scannette
             this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(642, 531);
             this.MinimumSize = new System.Drawing.Size(642, 531);
@@ -258,6 +277,7 @@ namespace Scannette
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.CheckBox checkBoxPasswordChar;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 
